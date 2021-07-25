@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-image: -webkit-radial-gradient(#fff, #f76f7f);
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav h1{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #444;
+   
+    position: relative;
+    
+}
+
+.cartPhoto{
+    cursor: pointer;
+    
+}
+
+nav ul li a::before{
+    content: '';
+    background: aqua;
+    width: 0px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+
+}
+
+nav ul li a:hover:before{
+    width: 80px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+.col-1{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+
+.col-1 img{
+    max-width: 69%;
+    margin-left: 120px;
+    
+}
+
+.col-1 h1{
+    display: inline-block;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #000;
+}
+
+.col-1 p{
+    
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: .5em 1.5em;
+    border-radius: 30px;
+    background: aqua;
+    color: #444;
+    text-decoration: none;
+    transition: background .5s;
+}
+.btn:hover{
+    background: rgb(19, 114, 114);
+    color: #fff;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+
+.categories{
+    margin: 70px 0 0;
+}
+
+.col-2{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.col-2:hover{
+    transform: translateY(-20px);
+}
+
+.col-2 img{
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.4);
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-3{
+    flex-basis: 25%;
+    margin-left: .1px;
+    margin-right: .1px;
+    padding: 27px 5px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+    border-radius: 15px;
+    flex-grow: 0;
+    transition: .3s;
+    
+}
+
+.col-3:hover{
+    transform: translateY(-20px);
+    
+}
+
+.col-3 img{
+    max-width: 100%;
+}
+
+.title{
+    display: block;
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    color: aqua;
+    
+}
+
+.rating{
+    color: #f76f7f;
+}
+
+.offer{
+    background-image: -webkit-radial-gradient(#fff, #f76f7f);
+    margin-top: 80px;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    box-shadow: 0 0 40px rgba(0,0,0,.30);
+}
+
+.col-1 .offer-image{
+    transform: translateX(-150px);
+    min-width: 80%;
+}
+
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    min-width: 100%;
+}
+
+.div *{
+    display: inline-block;
+    margin:0 20px;
+    font-size: 24px;
+    color: #444;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+.div *:hover{
+    color: rgb(25, 137, 156);
+}
+
+.more{
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.footer{
+    min-width: 100%;
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer *{
+    margin-top: 20px;
+}
+
+.footer hr{
+    border: none;
+    background: #444;
+    height: 1px;
+    margin: 20px 0;
+}
+
+span{
+    font-weight: 800;
+}
